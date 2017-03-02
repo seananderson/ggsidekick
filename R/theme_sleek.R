@@ -24,6 +24,7 @@ theme_sleek <- function(base_size = 11, base_family = "") {
       axis.ticks.length = unit(half_line/2.2, "pt"),
       strip.background = element_rect(fill = NA, colour = NA),
       strip.text.x = element_text(colour = "grey20"),
+      strip.text.y = element_text(colour = "grey20"),
       axis.text = element_text(colour = "grey30"),
       axis.title = element_text(colour = "grey30"),
       legend.title = element_text(colour = "grey30", size = rel(0.9)),
