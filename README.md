@@ -2,7 +2,7 @@
 ggsidekick
 ==========
 
-Contains a simple theme for ggplot2 that loosely resembles nicely themed plots (to my taste) from R base graphics: `theme_sleek()`. The theme builds on `ggplot2::theme_light()`.
+Contains a simple theme for ggplot2, `theme_sleek()`, that loosely resembles nicely themed plots (to my taste) from R base graphics. The theme builds on `ggplot2::theme_light()`. I may add more ggplot helper functions in the future.
 
 Installing:
 
@@ -23,4 +23,4 @@ ggplot(warpbreaks, aes(tension, breaks)) +
   theme_sleek() # ggsidekick magic happens here
 ```
 
-<img src="README-figs/unnamed-chunk-3-1.png" width="528" />
+<img src="README-figs/example-1.png" width="528" />

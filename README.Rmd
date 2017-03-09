@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 # ggsidekick
 
-Contains a simple theme for ggplot2 that loosely resembles nicely themed plots (to my taste) from R base graphics: `theme_sleek()`. The theme builds on `ggplot2::theme_light()`.
+Contains a simple theme for ggplot2, `theme_sleek()`, that loosely resembles nicely themed plots (to my taste) from R base graphics. The theme builds on `ggplot2::theme_light()`. I may add more ggplot helper functions in the future.
 
 Installing:
 
@@ -27,7 +27,11 @@ devtools::install_github("seananderson/ggsidekick")
 
 Exciting demo with dataset showing the number of breaks in yarn during weaving for 2 yarn types and 3 tension levels:
 
-```{r, fig.width=5.5, fig.height=3.6, fig.retina=2}
+```{r, echo=FALSE}
+set.seed(1)
+```
+
+```{r example, fig.width=5.5, fig.height=3.6, fig.retina=2}
 library(ggsidekick)
 library(ggplot2)
 ggplot(warpbreaks, aes(tension, breaks)) + 
