@@ -1,19 +1,33 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-ggsidekick
-==========
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-figs/"
+)
+```
+
+# ggsidekick
 
 Contains a simple theme for ggplot2 that loosely resembles nicely themed plots (to my taste) from R base graphics: `theme_sleek()`. The theme builds on `ggplot2::theme_light()`.
 
 Installing:
 
-``` r
+```{r, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("seananderson/ggsidekick")
 ```
 
 Exciting demo with dataset showing the number of breaks in yarn during weaving for 2 yarn types and 3 tension levels:
 
-``` r
+```{r, fig.width=5.5, fig.height=3.6, fig.retina=2}
 library(ggsidekick)
 library(ggplot2)
 ggplot(warpbreaks, aes(tension, breaks)) + 
@@ -22,5 +36,3 @@ ggplot(warpbreaks, aes(tension, breaks)) +
   facet_wrap(~wool) + labs(x = "Tension", y = "Breaks") +
   theme_sleek() # ggsidekick magic happens here
 ```
-
-<img src="README-figs/unnamed-chunk-3-1.png" width="528" />
