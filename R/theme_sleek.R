@@ -3,6 +3,9 @@
 #' A simple theme for ggplot2 that loosely resembles nicely themed plots from
 #' base graphics.
 #'
+#' @param base_size Base size
+#' @param base_family Base family
+#'
 #' @importFrom ggplot2 element_text element_rect element_blank theme_light theme
 #'   rel
 #' @importFrom grid unit

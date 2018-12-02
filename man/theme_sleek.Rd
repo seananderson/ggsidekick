@@ -6,6 +6,11 @@
 \usage{
 theme_sleek(base_size = 11, base_family = "")
 }
+\arguments{
+\item{base_size}{Base size}
+
+\item{base_family}{Base family}
+}
 \description{
 A simple theme for ggplot2 that loosely resembles nicely themed plots from
 base graphics.
@@ -17,4 +22,3 @@ p <- ggplot2::ggplot(mtcars) +
 p + theme_sleek()
 
 }
-

@@ -1,14 +1,16 @@
 Package: ggsidekick
 Type: Package
 Title: Helper Functions for ggplot2
-Version: 0.0.1
-Author: Sean Anderson
-Maintainer: Sean Anderson <sean@seananderson.ca>
+Version: 0.0.2
+Author: Sean C. Anderson
+Maintainer: Sean C. Anderson <sean@seananderson.ca>
 Description: Helper functions for ggplot2.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
 Imports:
     ggplot2 (>= 2.2.0),
-    grid
-RoxygenNote: 5.0.1
+    grid,
+    scales
+RoxygenNote: 6.1.1
