@@ -31,7 +31,7 @@ theme_sleek <- function(base_size = 11, base_family = "") {
       axis.text = element_text(colour = "grey30"),
       axis.title = element_text(colour = "grey30"),
       legend.title = element_text(colour = "grey30", size = rel(0.9)),
-      panel.border = element_rect(fill = NA, colour = "grey70", size = 1),
+      panel.border = element_rect(fill = NA, colour = "grey70", linewidth = 1),
       legend.key.size = unit(0.9, "lines"),
       legend.text = element_text(size = rel(0.7), colour = "grey30"),
       legend.key = element_rect(colour = NA, fill = NA),
