@@ -13,4 +13,4 @@ Imports:
     ggplot2 (>= 2.2.0),
     grid,
     scales
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.3
