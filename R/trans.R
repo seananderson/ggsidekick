@@ -14,5 +14,5 @@ fourth_root_power_trans <- function() {
     name = "fourth root power",
     transform = function(x) ifelse(x > 0, x^0.25, -(-x)^0.25),
     inverse = function(x) ifelse(x > 0, x^4, -(-x)^4),
-    domain = c(Inf, Inf))
+    domain = c(-Inf, Inf))
 }
