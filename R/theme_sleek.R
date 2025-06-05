@@ -37,6 +37,7 @@ theme_sleek <- function(base_size = 11, base_family = "") {
       legend.key = element_rect(colour = NA, fill = NA),
       legend.background = element_rect(colour = NA, fill = NA),
       plot.title = element_text(colour = "grey30", size = rel(1)),
-      plot.subtitle = element_text(colour = "grey30", size = rel(.85))
+      plot.subtitle = element_text(colour = "grey30", size = rel(.85)),
+      tagger.panel.tag.text = element_text(colour = "grey30")
     )
 }
