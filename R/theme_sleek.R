@@ -20,7 +20,7 @@
 
 theme_sleek <- function(base_size = 11, base_family = "") {
   half_line <- base_size/2
-  theme_light(base_size = base_size, base_family = base_family) +
+  t <- theme_light(base_size = base_size, base_family = base_family) +
     theme(
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank(),
@@ -37,7 +37,13 @@ theme_sleek <- function(base_size = 11, base_family = "") {
       legend.key = element_rect(colour = NA, fill = NA),
       legend.background = element_rect(colour = NA, fill = NA),
       plot.title = element_text(colour = "grey30", size = rel(1)),
-      plot.subtitle = element_text(colour = "grey30", size = rel(.85)),
-      tagger.panel.tag.text = element_text(colour = "grey30")
+      plot.subtitle = element_text(colour = "grey30", size = rel(.85))
     )
+
+  # Only set tagger theme element if tagger package is available
+  if (requireNamespace("tagger", quietly = TRUE)) {
+    t <- t + theme(tagger.panel.tag.text = element_text(colour = "grey30"))
+  }
+
+  t
 }

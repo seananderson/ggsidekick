@@ -1,7 +1,7 @@
 Package: ggsidekick
 Type: Package
 Title: Helper Functions for ggplot2
-Version: 0.0.2
+Version: 0.0.3
 Author: Sean C. Anderson
 Maintainer: Sean C. Anderson <sean@seananderson.ca>
 Description: Helper functions for ggplot2.
@@ -13,4 +13,6 @@ Imports:
     ggplot2 (>= 2.2.0),
     grid,
     scales
+Suggests:
+    tagger
 RoxygenNote: 7.3.2.9000
